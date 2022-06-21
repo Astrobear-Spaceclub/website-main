@@ -1,0 +1,655 @@
+@media (max-width: 2399px) {
+ 
+    .header-logo img {
+        width: 340px;
+    }
+    .header-logo {
+        margin: 0 70px 0 0;
+    }
+    .main-menu ul li a {
+        font-size: 16px;
+        text-shadow: 0px 4px 2.5px rgba(0, 0, 0, 0.4);
+    }
+    .header-social ul li {
+        margin: 0 0 27px;
+    }
+    .header-social ul li a {
+        width: 30px;
+    }
+    .header-section {
+        padding: 45px 0;
+    }
+    .header-social {
+        top: 57px;
+        right: 57px;
+    }
+
+
+
+    .section-title {
+        margin: 0 0 50px;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-weight: 700;
+        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5))drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+        /* letter-spacing: 1px; */
+        margin: 0 0 25px;
+    }
+    .h1 {
+        font-size: 115px;
+    }
+    .h2 {
+        font-size: 72px;
+    }
+    .h3 {
+        font-size: 36px;
+    }
+    .h4 {
+        font-size: 21.9px;
+    }
+    .h5 {
+        font-size: 20.5px;
+    }
+    .h6 {
+        font-size: 13.8px;
+    }
+    .hero-content .hero-button {
+        margin: 20px 0 55px;
+        height: 135px;
+        width: 664px;
+        font-size: 65px;
+        padding: 0 50px;
+    }
+    .hero-content .hero-button span {
+        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5)) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5))drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+    }
+    .hero-content .hero-button .small {
+        font-size: 19px;
+    }
+    .hero-image {
+        bottom: 110px;
+        right: 170px;
+        width: 330px;
+    }
+    .hero-section-inner {
+        padding: 390px 0;
+    }
+
+
+    .takeoff-section {
+        padding: 500px 0;
+        margin: -500px 0 0;
+    }
+    .takeoff-main-row .right .number {
+        margin: 5px 0 12px;
+        font-size: 120px;
+    }
+
+
+
+    .story-bear {
+        width: 800px;
+    }
+    .story-section {
+        padding: 180px 0 650px;
+        margin: -130px 0 0;
+    }
+    .story-3d-shape {
+        height: 640px;
+        top: -160px;
+    }
+    .story-line-shape {
+        height: 740px;
+    }
+
+
+
+    .bear-grid .bear-item .lt-content img {
+        width: 157px;
+        margin: 0 0 30px;
+    }
+    .bear-grid .bear-item .lt-content {
+        padding: 100px 50px;
+    }
+
+
+
+    .roadmap-title .img {
+        width: 1270px;
+    }
+    .roadmap-bear {
+        top: 100px;
+        width: 750px;
+    }
+    .roadmap-section {
+        padding: 560px 0 80px;
+    }
+    .roadmap-single ul li .bullet {
+        margin: 2px 35px 0 0;
+        width: 30px;
+    }
+    .roadmap-main-row {
+        grid-gap: 40px;
+    }
+    .roadmap-title {
+        margin: 0 0 80px;
+    }
+    .roadmap-bottom-social a {
+        margin: 0 4px;
+        width: 40px;
+    }
+    .roadmap-bottom-social p {
+        font-size: 16px;
+        margin: 0 0 15px;
+    }
+
+
+
+    .artist-content .tp {
+        width: 90px;
+        margin: 0 0 40px;
+    }
+    .artist-section {
+        padding: 200px 0 190px;
+    }
+
+
+
+    .partners-section-inner .section-title .h1 {
+        font-size: 80px;
+    }
+    .partners-wrap {
+        grid-gap: 170px;
+    }
+
+
+    .faq-section {
+        padding: 120px 0 30px;
+    }
+    .single-faq .toggler-header {
+        font-size: 45px;
+    }
+    .single-faq .collapsible-content p {
+        margin: 0 0 20px;
+        font-size: 21px;
+    }
+    .single-faq .collapsible-content-inner {
+        padding: 25px 0 0;
+    }
+    .single-faq {
+        margin: 0 0 65px;
+    }
+    .faq-bottom .image {
+        width: 960px;
+    }
+    .faq-bottom {
+        margin: 90px 0 55px;
+    }
+    .faq-bear {
+        width: 370px;
+        bottom: 50px;
+        right: -20px;
+    }
+    .faq-shape2 {
+        height: 1260px;
+        bottom: 0px;
+    }
+    .faq-shape1 {
+        height: 800px;
+        top: 160px;
+    }
+}
+
+
+@media (max-width: 1799px) {
+    
+    .header-logo img {
+        width: 250px;
+    }
+    .header-logo {
+        margin: 0 50px 0 0;
+    }
+    .main-menu ul li a {
+        font-size: 13px;
+    }
+    .main-menu ul li {
+        margin-right: 32px;
+    }
+    .header-social ul li a {
+        width: 24px;
+    }
+    .header-social {
+        top: 35px;
+        right: 35px;
+    }
+    .header-section {
+        padding: 30px 0;
+    }
+
+
+    .section-title {
+        margin: 0 0 30px;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        margin: 0 0 16px;
+    }
+    .h1 {
+        font-size: 88px;
+    }
+    .h2 {
+        font-size: 57px;
+    }
+    .h3 {
+        font-size: 26px;
+    }
+    .h4 {
+        font-size: 16px;
+    }
+    .h5 {
+        font-size: 15.2px;
+    }
+    .h6 {
+        font-size: 10.5px;
+    }
+    .hero-content .hero-button {
+        margin: 7px 0 36px;
+        height: 107px;
+        width: 530px;
+        font-size: 45px;
+        padding: 0 40px;
+    }
+    .hero-content .hero-button .small {
+        font-size: 17px;
+    }
+    .hero-section-inner {
+        padding: 290px 0;
+    }
+    .hero-image {
+        bottom: 50px;
+        right: 140px;
+        width: 250px;
+    }
+
+
+
+    .takeoff-main-row .right .number {
+        margin: 3px 0 10px;
+        font-size: 88px;
+    }
+    .takeoff-3d-shape {
+        height: 700px;
+    }
+    .takeoff-section {
+        padding: 290px 0;
+        margin: -240px 0 0;
+    }
+
+
+    .story-bear {
+        width: 500px;
+    }
+    .story-3d-shape {
+        height: 350px;
+        top: -60px;
+    }
+    .story-line-shape {
+        height: 400px;
+    }
+    .story-section {
+        padding: 130px 0 350px;
+        margin: -150px 0 0;
+    }
+
+
+    .bear-grid .bear-item .lt-content img {
+        width: 100px;
+        margin: 0 0 22px;
+    }
+    .bear-grid .bear-item .lt-content {
+        padding: 70px 30px;
+    }
+
+
+    .roadmap-title {
+        margin: 0 0 60px;
+        padding: 0 6%;
+    }
+    .roadmap-single ul li .bullet {
+        margin: 1px 26px 0 0;
+        width: 22px;
+    }
+    .roadmap-bottom-social a {
+        margin: 0 3px;
+        width: 30px;
+    }
+    .roadmap-bottom-social p {
+        font-size: 14px;
+        margin: 0 0 11px;
+    }
+    .roadmap-main-row {
+        grid-gap: 25px;
+    }
+    .roadmap-bear {
+        top: 50px;
+        width: 400px;
+    }
+    .roadmap-section {
+        padding: 290px 0 50px;
+    }
+
+
+    .artist-content .tp {
+        width: 60px;
+        margin: 0 0 30px;
+    }
+    .artist-section {
+        padding: 100px 0 100px;
+    }
+    .partners-section-inner .section-title .h1 {
+        font-size: 50px;
+    }
+    .partners-wrap {
+        grid-gap: 80px;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .partners-section {
+        padding: 65px 0;
+    }
+    .partners-section-inner .section-title {
+        margin: 0 0 20px;
+    }
+
+
+
+    .single-faq .toggler-header {
+        font-size: 30px;
+    }
+    .single-faq .collapsible-content p {
+        margin: 0 0 10px;
+        font-size: 14px;
+    }
+    .single-faq .collapsible-content-inner {
+        padding: 15px 0 0;
+    }
+    .single-faq {
+        margin: 0 0 40px;
+    }
+    .faq-section {
+        padding: 75px 0 30px;
+    }
+    .faq-bottom .image {
+        width: 70%;
+    }
+    .faq-bottom {
+        margin: 60px 0 30px;
+    }
+    .faq-bear {
+        width: 240px;
+        bottom: 10px;
+        right: 10px;
+    }
+    .faq-shape2 {
+        height: 830px;
+        bottom: 0px;
+    }
+    .faq-shape1 {
+        height: 530px;
+        top: 100px;
+    }
+
+
+}
+
+
+@media (max-width: 1399px) {
+
+}   
+
+
+@media (max-width: 1199px) {
+    .header-logo img {
+        width: 180px;
+    }
+    .header-logo {
+        margin: 0 30px 0 0;
+    }
+
+
+    .hero-section-inner {
+        padding: 220px 0;
+    }
+    .hero-content {
+        width: 60%;
+    }
+    .hero-image {
+        bottom: 50px;
+        right: 140px;
+        width: 190px;
+    }
+    .header-social ul li a {
+        width: 18px;
+    }
+    .header-social ul li {
+        margin: 0 0 13px;
+    }
+    .header-social {
+        top: 25px;
+        right: 20px;
+    }
+    .h1 {
+        font-size: 70px;
+    }
+    .h2 {
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    
+    .header-social {
+        position: fixed;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+
+
+    .hero-image {
+        width: 100px;
+    }
+    .hero-content {
+        width: 100%;
+        z-index: 1;
+        position: relative;
+    }
+    .hero-section-inner {
+        padding: 150px 0;
+    }
+    .h1 {
+        font-size: 50px;
+    }
+    
+
+    .takeoff-3d-shape {
+        height: 200px;
+    }
+    .takeoff-section {
+        padding: 120px 0;
+        margin: -140px 0 0;
+    }
+    .takeoff-main-row {
+        grid-template-columns: 100%;
+        grid-gap: 20px;
+    }
+
+
+
+    .story-3d-shape {
+        height: 140px;
+        top: -30px;
+    }
+    .story-line-shape {
+        height: 150px;
+        display: none;
+    }
+    .story-section {
+        padding: 50px 0 70px;
+        margin: -90px 0 0;
+    }
+    .story-bear {
+        display: none;
+    }
+    .story-content {
+        width: 100%;
+    }
+
+
+    .bear-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+
+    .roadmap-main-row {
+        grid-template-columns: 100%;
+    }
+
+
+
+    .artist-content {
+        width: 100%;
+    }
+
+
+
+    .faq-shape1 {
+        height: 300px;
+        top: 110px;
+    }
+    .faq-shape2 {
+        height: auto;
+        width: 100%;
+        bottom: 0px;
+    }
+    .faq-bear {
+        width: 160px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-content .hero-button {
+        margin: 4px 0 28px;
+        height: 60px;
+        width: 296px;
+        padding: 0 20px;
+        font-size: 29px;
+    }
+    .hero-content .hero-button .small {
+        font-size: 10px;
+    }
+
+
+    .h1 {
+        font-size: 38px;
+    }
+    .h2 {
+        font-size: 30px;
+    }
+    .h3 {
+        font-size: 20px;
+    }
+    .h4 {
+        font-size: 14px;
+    }
+    .takeoff-main-row .right .number {
+        margin: 3px 0 8px;
+        font-size: 68px;
+    }
+
+
+    .roadmap-bear {
+        top: 0px;
+        width: 200px;
+    }
+    .roadmap-section {
+        padding: 124px 0 40px;
+    }
+    .roadmap-title {
+        margin: 0 0 40px;
+        padding: 0 6%;
+    }
+    .roadmap-single ul li .bullet {
+        margin: 1px 22px 0 0;
+        width: 20px;
+    }
+
+
+
+    .partners-section-inner .section-title .h1 {
+        font-size: 25px;
+    }
+    .partners-wrap {
+        grid-gap: 30px;
+    }
+    .partners-section {
+        padding: 40px 0;
+    }
+    .faq-section {
+        padding: 70px 0 30px;
+    }
+    .single-faq .toggler-header {
+        font-size: 22px;
+    }
+
+
+}
+
+
+@media (max-width: 575px) {
+    .takeoff-section {
+        background-size: contain !important;
+    }
+    .story-section {
+        background-size: contain !important;
+    }
+    .artist-section {
+        background-position: 90% center;
+    }
+
+
+    .header-section {
+        padding: 20px 0;
+    }
+
+
+
+    .hero-section {
+        background-size: 190% 100% !important;
+        background-position: 88% center;
+    }
+    .hero-section-inner {
+        padding: 130px 0;
+    }
+
+
+    .bear-grid {
+        grid-template-columns: 50% 50%;
+    }
+
+
+    .bear-grid .bear-item .lt-content {
+        padding: 50px 15px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .hero-section {
+        background-size: 280% 100% !important;
+        background-position: 78.6% center;
+    }
+}
