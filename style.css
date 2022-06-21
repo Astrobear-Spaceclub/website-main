@@ -428,7 +428,7 @@ p:last-child{
   height: 182px;
   width: 1020px;
   background: url('images/hero-button-bg.png') no-repeat center center/cover;
-  font-size: 106px;
+  font-size: 55px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
