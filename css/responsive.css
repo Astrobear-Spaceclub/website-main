@@ -431,7 +431,8 @@
         width: 18px;
     }
     .header-social ul li {
-        margin: 0 0 13px;
+        margin-right: 0;
+        margin-bottom: 13px;
     }
     .header-social {
         top: 25px;
@@ -450,10 +451,16 @@
     
     .header-social {
         position: fixed;
-        top: 50%;
-        transform: translate(0,-50%);
+        transform: translate(-145%,116%);
     }
 
+    .header-social ul {
+        flex-direction: row;
+    }
+    .header-social ul li {
+        margin-right: 13px;
+        margin-bottom: 0;
+    }
 
     .hero-image {
         width: 100px;
@@ -620,13 +627,6 @@
         background-position: 90% center;
     }
 
-
-    .header-section {
-        padding: 20px 0;
-    }
-
-
-
     .hero-section {
         background-size: 190% 100% !important;
         background-position: 88% center;
@@ -635,6 +635,9 @@
         padding: 130px 0;
     }
 
+    .header-social {
+        transform: translate(-50%,116%);
+    }
 
     .bear-grid {
         grid-template-columns: 50% 50%;

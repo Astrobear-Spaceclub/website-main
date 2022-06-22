@@ -254,11 +254,22 @@ p:last-child{
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: 991px) {
+  .header-social ul li {
+    margin-bottom: 35px;
+    margin-right: 0 !important;
+  }
+  .header-social ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .header-social ul li {
-  margin-bottom: 35px;
+  margin-right: 35px;
 }
 .header-social ul li:last-child {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 .header-social ul li a {
   display: block;
