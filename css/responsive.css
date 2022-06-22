@@ -450,7 +450,6 @@
 @media (max-width: 991px) {
     
     .header-social {
-        position: fixed;
         transform: translate(-145%,116%);
     }
 
