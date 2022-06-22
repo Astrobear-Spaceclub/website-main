@@ -401,7 +401,7 @@ p:last-child{
 
 /* ---hero-section--- */
 .hero-section {
-  background: url('images/hero-bg.png') no-repeat center center/100% 100%;
+  background: url('images/hero-bg-bear.png') no-repeat center center/100% 100%;
 }
 .hero-section-inner {
   padding: 627px 0; 
@@ -596,7 +596,7 @@ p:last-child{
 
 /* ---roadmap-section--- */
 .roadmap-section {
-  background: url('images/roadmap-bg.png') no-repeat center center/cover;
+  background: url('images/roadmap-bg-bear.png') no-repeat center center/cover;
   padding: 850px 0 140px;
   position: relative;
   z-index: 1;
