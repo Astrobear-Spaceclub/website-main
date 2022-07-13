@@ -835,3 +835,7 @@ p:last-child{
 .hide {
   display: none;
 }
+
+.toastify.error {
+  background: darkred;
+}

@@ -52,9 +52,29 @@ const parseError = function (error) {
     }
 };
 
+const showNotification = function (message, classNames = 'error') {
+    Toastify({
+        text: message,
+        className: classNames,
+        duration: 3000,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+    }).showToast();
+}
+
 const formatWalletAddress = function (walletAddress) {
     return walletAddress.slice(0, 4) + '...' + walletAddress.slice(-4);
 };
+
+window.addEventListener("error", errorEvent => {
+    showNotification(parseError(errorEvent.error), false);
+    errorEvent.preventDefault();
+});
+
+window.addEventListener("unhandledrejection", errorEvent => {
+    showNotification(parseError(errorEvent.reason, true));
+    errorEvent.preventDefault();
+});
 
 window.addEventListener('load', async function() {
     /*const disclaimerModal = document.getElementById('disclaimerModal');
@@ -152,6 +172,7 @@ window.addEventListener('load', async function() {
             }
         } catch (error) {
             console.error(error);
+            showNotification(parseError(error));
             return;
         }
 
@@ -199,6 +220,7 @@ window.addEventListener('load', async function() {
 
         receiptCall.catch(function (error) {
             console.error(error);
+            showNotification(parseError(error));
         });
 
         receiptCall.then(async function (receipt) {
