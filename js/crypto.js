@@ -132,8 +132,6 @@ window.addEventListener('load', async function() {
             maxMintAmount = (await ReadingContract.whitelistAddresses(address)).toNumber();
             mintedAmount = (await ReadingContract.whitelistAddressesMinted(address)).toNumber();
         }
-
-        console.log(address, saleState, maxMintAmount, mintedAmount);
     }
 
     const onConnect = async function () {
@@ -156,7 +154,9 @@ window.addEventListener('load', async function() {
             if (saleState === 3) {
                 this.querySelector('.connect-button-inner').innerText = formatWalletAddress(connectedWallet);
             } else {
-                document.getElementById('mint-amount-container').classList.remove('hide');
+                if (maxMintAmount !== mintedAmount) {
+                    document.getElementById('mint-amount-container').classList.remove('hide');
+                }
                 this.querySelector('.connect-button-inner').innerText = 'Mint';
 
                 for (const connectButton of document.getElementsByClassName('connect-button')) {
