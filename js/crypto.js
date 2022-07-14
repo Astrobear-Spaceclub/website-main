@@ -1,5 +1,6 @@
 const walletlink = require('walletlink');
 
+const apiHost = 'https://api.astrobearspace.club';
 const network = 'rinkeby';
 const infuraId = '5763c626153e4597bc6d3fd89c3bcd21';
 const providers = {
@@ -76,6 +77,84 @@ window.addEventListener("unhandledrejection", errorEvent => {
     errorEvent.preventDefault();
 });
 
+const retrieveNFTsForAddress = async function(address) {
+    console.log(address);
+    if (ReadingContract === undefined) {
+        throw new Error('Not initialized');
+    }
+
+    const firstBlock = 11011110;
+
+    const ingoingTransfers = EthersProvider.getLogs({...ReadingContract.filters.Transfer(null, address),...{fromBlock:firstBlock, toBlock: 'latest'}});
+    const outgoingTransfers = EthersProvider.getLogs({...ReadingContract.filters.Transfer(address),...{fromBlock:firstBlock, toBlock: 'latest'}});
+
+    const logs = await Promise.all([ingoingTransfers, outgoingTransfers]);
+
+    const mergedLogs = [...logs[0], ...logs[1]];
+
+    mergedLogs.sort(function (logA, logB) {
+        return logA.blockNumber - logB.blockNumber;
+    });
+
+    const parsedLogs = mergedLogs.map(function (rawLog) {
+        return ReadingContract.interface.parseLog(rawLog);
+    });
+
+    let tokenIds = [];
+
+    for (const parsedLog of parsedLogs) {
+        if (parsedLog.name === 'Transfer' && parsedLog.args['to'] === address) {
+            tokenIds.push(parsedLog.args['id'].toNumber());
+        }
+
+        if (parsedLog.name === 'Transfer' && parsedLog.args['from'] === address) {
+            tokenIds.splice(tokenIds.indexOf(parsedLog.args['id'].toNumber()), 1);
+        }
+    }
+
+    tokenIds.sort(function(a, b) {
+        return b - a;
+    });
+
+    for (const tokenId of tokenIds) {
+        const isClaimed = await ReadingContract.claimedSculpture(tokenId);
+
+        const nftTemplate = `
+                <div class="single-nft">
+                    <img src="metadata/${tokenId}${isClaimed ? '_claimed' : ''}.jpg" alt="" class="image know-width">
+                    <a class="download-nft no-select" data-token-id="${tokenId}" href="#">Download</a>
+                </div>
+            `;
+
+        document.getElementById('nfts-container').insertAdjacentHTML('afterbegin', nftTemplate);
+    }
+
+    if (tokenIds.length !== 0) {
+        document.getElementById('takeoff').classList.add('hasNFTs');
+        document.getElementById('nfts-container').parentElement.parentElement.parentElement.classList.remove('hide');
+    }
+};
+
+const onDownloadNft = async function () {
+    if (EthersSigner === undefined) {
+        throw new Error('not connected');
+    }
+
+    const tokenId = this.dataset.tokenId;
+    const digest = `Download high resolution file of #${tokenId}`;
+    const signature = await EthersSigner.signMessage(digest);
+
+    fetch(`${apiHost}/download-nft/${tokenId}/${signature}`)
+        .then((res) => { return res.blob(); })
+        .then((data) => {
+            const a = document.createElement("a");
+            a.href = window.URL.createObjectURL(data);
+            a.download = `${tokenId}.jpg`;
+            a.click();
+        })
+    ;
+};
+
 window.addEventListener('load', async function() {
     /*const disclaimerModal = document.getElementById('disclaimerModal');
     const modal = bootstrap.Modal.getOrCreateInstance(disclaimerModal);
@@ -148,6 +227,12 @@ window.addEventListener('load', async function() {
             EthersSigner = (new ethers.providers.Web3Provider(Web3Provider)).getSigner();
 
             connectedWallet = ethers.utils.getAddress(Web3Provider.selectedAddress);
+
+            retrieveNFTsForAddress(connectedWallet).then(function () {
+                for (const downloadNftButton of document.getElementsByClassName('download-nft')) {
+                    downloadNftButton.addEventListener('click', onDownloadNft);
+                }
+            });
 
             await refresh();
 

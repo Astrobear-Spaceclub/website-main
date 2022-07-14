@@ -162,6 +162,13 @@
         grid-gap: 170px;
     }
 
+    .nfts-section-inner .section-title .h1 {
+        font-size: 80px;
+    }
+    .nfts-wrap {
+        grid-gap: 170px;
+    }
+
 
     .faq-section {
         padding: 120px 0 30px;
@@ -360,7 +367,20 @@
         margin: 0 0 20px;
     }
 
-
+    .nfts-section-inner .section-title .h1 {
+        font-size: 50px;
+    }
+    .nfts-wrap {
+        grid-gap: 80px;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .nfts-section {
+        padding: 65px 0;
+    }
+    .nfts-section-inner .section-title {
+        margin: 0 0 20px;
+    }
 
     .single-faq .toggler-header {
         font-size: 30px;
@@ -604,6 +624,17 @@
     .partners-section {
         padding: 40px 0;
     }
+
+    .nfts-section-inner .section-title .h1 {
+        font-size: 25px;
+    }
+    .nfts-wrap {
+        grid-gap: 30px;
+    }
+    .nfts-section {
+        padding: 40px 0;
+    }
+
     .faq-section {
         padding: 70px 0 30px;
     }

@@ -733,8 +733,35 @@ p:last-child{
 }
 /* ---partners-section---end */
 
+/* ---nfts-section--- */
+.nfts-section {
+  padding: 100px 0;
+  background: #0903D4;
+}
+
+.nfts-section-inner {
+
+}
+.nfts-section-inner .section-title {
+  margin: 0 0 30px;
+}
+.nfts-section-inner .section-title .h1 {
+  font-size: 121px;
+}
 
 
+.nfts-wrap {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 250px;
+}
+.nfts-wrap .single-nft {
+
+}
+.nfts-wrap .single-nft .image {
+  width: 100%;
+}
+/* ---nfts-section---end */
 
 /* ---faq-section--- */
 .faq-section {
@@ -838,4 +865,15 @@ p:last-child{
 
 .toastify.error {
   background: darkred;
+}
+
+#takeoff.hasNFTs {
+  margin: 0 !important;
+}
+
+.download-nft {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
 }
