@@ -2,11 +2,11 @@ const walletlink = require('walletlink');
 
 const apiHost = 'https://api.astrobearspace.club';
 const network = 'rinkeby';
-const infuraId = '5763c626153e4597bc6d3fd89c3bcd21';
+const infuraId = 'fbbd4ab4c92041dbb41f6014de43408b';
 const providers = {
-    mainnet: 'https://mainnet.infura.io/v3/5763c626153e4597bc6d3fd89c3bcd21',
-    ropsten: 'https://ropsten.infura.io/v3/5763c626153e4597bc6d3fd89c3bcd21',
-    rinkeby: 'https://rinkeby.infura.io/v3/5763c626153e4597bc6d3fd89c3bcd21'
+    mainnet: 'https://mainnet.infura.io/v3/fbbd4ab4c92041dbb41f6014de43408b',
+    ropsten: 'https://ropsten.infura.io/v3/fbbd4ab4c92041dbb41f6014de43408b',
+    rinkeby: 'https://rinkeby.infura.io/v3/fbbd4ab4c92041dbb41f6014de43408b'
 };
 const chainIds = {
     mainnet: '0x1',
