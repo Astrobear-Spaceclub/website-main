@@ -4,6 +4,7 @@
   },
   "scripts": {
     "bundle": "browserify js/crypto.js -o js/bundle.js",
+    "bundle-watch": "watchify js/crypto.js -o js/bundle.js",
     "minify": "uglifyjs --compress --mangle --no-annotations -o js/bundle.min.js js/bundle.js",
     "build": "npm run bundle && npm run minify"
   }
