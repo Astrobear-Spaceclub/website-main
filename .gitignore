@@ -1,8 +1,6 @@
 .idea
-package-lock.json
 node_modules
 js/bundle.js
-js/bundle.min.js
 metadata
 metadata_generated
 metadata_generated_claimed
