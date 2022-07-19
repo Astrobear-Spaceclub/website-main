@@ -10,7 +10,7 @@ for (const filename of metadataDir) {
         const contentClaimed = JSON.parse(filesystem.readFileSync(`metadata/${filename}`).toString());
 
         content.image = `${ipfsImages}/${filename.replace('.json', '.jpg')}`;
-        contentClaimed.image = `${ipfsImagesClaimed}/${filename.replace('.json', '.jpg')}`;
+        contentClaimed.image = `${ipfsImagesClaimed}/${filename.replace('.json', '_claimed.jpg')}`;
 
         filesystem.writeFileSync(`metadata_generated/${filename.replace('.json', '')}`, JSON.stringify(content));
         filesystem.writeFileSync(`metadata_generated_claimed/${filename.replace('.json', '')}`, JSON.stringify(contentClaimed));
