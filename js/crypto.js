@@ -1,7 +1,7 @@
 const walletlink = require('walletlink');
 
 const apiHost = 'https://api.astrobearspace.club';
-const network = 'rinkeby';
+const network = 'mainnet';
 const infuraId = 'fbbd4ab4c92041dbb41f6014de43408b';
 const providers = {
     mainnet: 'https://mainnet.infura.io/v3/fbbd4ab4c92041dbb41f6014de43408b',
@@ -19,7 +19,7 @@ const etherscan = {
     rinkeby: 'https://rinkeby.etherscan.io'
 };
 const contractAddress = {
-    mainnet: '',
+    mainnet: '0x77ed8f086df1e8b04baa99690fd8bc6bf17de9e0',
     ropsten: '',
     rinkeby: '0x9e020BC81597d27A1c3EF044AA331943082B6AF3'
 };
@@ -198,7 +198,7 @@ window.addEventListener('load', async function() {
         saleState = await ReadingContract.saleState();
 
         if (saleState >= 2) {
-            maxMintAmount = (await ReadingContract.maxMintPerWallet()).toNumber();
+            maxMintAmount = (await ReadingContract.maxMintPerWallet());
             mintedAmount = (await ReadingContract.publicAddressesMinted(address)).toNumber();
         }
 
