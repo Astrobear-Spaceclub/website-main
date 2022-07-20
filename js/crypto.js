@@ -83,7 +83,7 @@ const retrieveNFTsForAddress = async function(address) {
         throw new Error('Not initialized');
     }
 
-    const firstBlock = 11011110;
+    const firstBlock = 15178317;
 
     const ingoingTransfers = EthersProvider.getLogs({...ReadingContract.filters.Transfer(null, address),...{fromBlock:firstBlock, toBlock: 'latest'}});
     const outgoingTransfers = EthersProvider.getLogs({...ReadingContract.filters.Transfer(address),...{fromBlock:firstBlock, toBlock: 'latest'}});
@@ -281,12 +281,12 @@ window.addEventListener('load', async function() {
 
         const walletBalance = await EthersSigner.getBalance();
 
-        let mintPrice = '0.1';
+        let mintPrice = '0.55';
         if (saleState === 0) {
-            mintPrice = '0.05';
+            mintPrice = '0.27';
         }
         if (saleState === 1) {
-            mintPrice = '0.075';
+            mintPrice = '0.41';
         }
 
         const mintAmount = parseInt(document.getElementById('mint-amount').innerText);
