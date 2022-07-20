@@ -217,13 +217,6 @@ window.addEventListener('load', async function() {
         try {
             Web3Provider = await web3Modal.connect();
 
-            if (Web3Provider.chainId !== chainIds[network]) {
-                await Web3Provider.request({
-                    method: 'wallet_switchEthereumChain',
-                    params: [{ chainId: chainIds[network] }]
-                });
-            }
-
             EthersSigner = (new ethers.providers.Web3Provider(Web3Provider)).getSigner();
 
             connectedWallet = ethers.utils.getAddress(Web3Provider.selectedAddress);
