@@ -219,7 +219,7 @@ window.addEventListener('load', async function() {
 
             EthersSigner = (new ethers.providers.Web3Provider(Web3Provider)).getSigner();
 
-            connectedWallet = ethers.utils.getAddress(Web3Provider.selectedAddress);
+            connectedWallet = ethers.utils.getAddress(Web3Provider.selectedAddress !== undefined ? Web3Provider.selectedAddress : Web3Provider.accounts[0]);
 
             retrieveNFTsForAddress(connectedWallet).then(function () {
                 for (const downloadNftButton of document.getElementsByClassName('download-nft')) {
